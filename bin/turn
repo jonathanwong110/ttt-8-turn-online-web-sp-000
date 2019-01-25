@@ -19,8 +19,6 @@ display_board(board)
 input = gets.strip
 index = input_to_index(input)
 
-move(board, index)
-
 turn(board)
 turn(board)
 turn(board)
