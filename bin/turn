@@ -14,10 +14,12 @@ def display_board(board)
   puts (" #{board[6]} | #{board[7]} | #{board[8]} ")
 end
 
+display_board(board)
+
 input = gets.strip
 index = input_to_index(input)
 
-display_board(board)
+move(board, index)
 
 turn(board)
 turn(board)
