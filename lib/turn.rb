@@ -30,8 +30,4 @@ end
 
 def turn(board)
    puts "Please enter 1-9:"
-end
-
-def turn(user_input)
-  puts move(board, index, character)
-end
+   user_input
