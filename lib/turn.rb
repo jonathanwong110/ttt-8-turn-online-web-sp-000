@@ -10,23 +10,7 @@ def input_to_index(integer)
   integer.to_i - 1
 end
 
-def input_to_index(user_input)
-  user_input.to_i - 1
-end
 
-def turn(board)
-  puts "Please enter 1-9:"
-end
-
-def turn(board, index, current_player)
-  user_input = gets.strip
-  index = input_to_index(user_input)
-  if valid_move?(board, index, current_player)
-      move(board, index, current_player(board))
-      turn(board)
-   end
-   display_board(board)
-end
 
 def user_input(board, index, character)
   index.between(0, 8)
@@ -60,3 +44,20 @@ def position_taken
   end
 end
 
+def input_to_index(user_input)
+  user_input.to_i - 1
+end
+
+def turn(board)
+  puts "Please enter 1-9:"
+end
+
+def turn(board, index, current_player)
+  user_input = gets.strip
+  index = input_to_index(user_input)
+  if valid_move?(board, index, current_player)
+      move(board, index, current_player(board))
+      turn(board)
+   end
+   display_board(board)
+end
