@@ -33,5 +33,5 @@ def turn(board)
 end
 
 def turn(user_input)
-  puts move
+  puts move(board, index, character)
 end
