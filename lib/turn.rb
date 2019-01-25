@@ -20,17 +20,12 @@ def valid_move?(board, index, character = "X")
    end
 end
 
-def move(board, position, character = "X")
-  update_array_at_with(board, position, character)
-end
-
-def update_array_at_with(array, index, value)
-  array[index] = value
-end
-
-def position_taken
-  if array[index] = "X" or "O"
-    puts "false"
+def position_taken?(board, index)
+  if (board[index] ==  " " || board[index] == "" || board[index] == nil)
+    false
+  else
+    true
+  end
 end
 
 def turn(board)
