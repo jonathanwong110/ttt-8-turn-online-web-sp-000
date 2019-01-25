@@ -48,7 +48,7 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-def turn(board)
+def turn(board, index, current_player)
   puts "Please enter 1-9:"
 end
 
