@@ -48,11 +48,11 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-def turn(board, index, current_player)
+def turn(board)
   puts "Please enter 1-9:"
 end
 
-def turn(board, index, current_player)
+def turn(board)
   user_input = gets.strip
   index = input_to_index(user_input)
   if valid_move?(board, index, current_player)
