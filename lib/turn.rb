@@ -28,7 +28,7 @@ def turn(board, index, current_player)
    display_board(board)
 end
 
-def user_input(board, index)
+def user_input(board, index, character)
   index.between(0, 8)
 end
 
