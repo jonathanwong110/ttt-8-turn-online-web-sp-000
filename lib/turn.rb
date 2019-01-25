@@ -10,8 +10,6 @@ def input_to_index(integer)
   integer.to_i - 1
 end
 
-
-
 def user_input(board, index, character)
   index.between(0, 8)
 end
@@ -30,8 +28,8 @@ def valid_move?(board, index)
   end
 end
 
-def move(board, position, token)
-  update_array_at_with(board, position, token)
+def move(board, position, current_player)
+  update_array_at_with(board, position, current_player)
 end
 
 def update_array_at_with(array, index, value)
